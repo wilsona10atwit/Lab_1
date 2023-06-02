@@ -12,10 +12,19 @@ public class NPCController : MonoBehaviour
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            GameController.score--;
+        }
+    }
     // Define AI behavior for the characters
     void Update()
     {
+        Vector3 direction = (playerTransform.position - transform.position).normalized;
+        transform.position += direction * speed * Time.deltaTime;
         // Implement Simple AI to Move towards the player
-       
+
     }
 }
