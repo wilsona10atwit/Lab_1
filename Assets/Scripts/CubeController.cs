@@ -1,15 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
+using OculusSampleFramework;
 
-public class CubeController : MonoBehaviour
+public class CubeController : OVRGrabbable
 {
+
+
     private GameController scoreManager;
+    private GameController grabbed;
     // Start is called before the first frame update
     void Start()
     {
         scoreManager = GameObject.Find("GameController").GetComponent<GameController>();
-
+        grabbed = GameObject.Find("GameController").GetComponent<GameController>();
+    }
+    public override void GrabBegin(OVRGrabber hand, Collider grabPoint)
+    {
+        base.GrabBegin(hand, grabPoint);
+        GameController.npcScore--;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -30,8 +40,10 @@ public class CubeController : MonoBehaviour
         }
     }
 
-        // Update is called once per frame
-        void Update()
+
+
+    // Update is called once per frame
+    void Update()
     {
         
     }

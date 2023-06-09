@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
+using OculusSampleFramework;
 
 public class NPCController : MonoBehaviour
 {

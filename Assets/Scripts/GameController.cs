@@ -1,12 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class GameController: MonoBehaviour
+
+
 
 {
     public static int score = 0;
     public static int npcScore = 0;
+    public void OnCubeGrabbed()
+    {
+        npcScore--;
+        // Update the score on your GUI...
+    }
 
     void OnGUI()
     {
@@ -21,4 +29,5 @@ public class GameController: MonoBehaviour
 
 
 
-    }
+
+}
