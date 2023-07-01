@@ -393,6 +393,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/VoiceSDK.Dictation.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VoiceSDK.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VoiceSDK.Runtime.ref.dll"
+"Assets/MazeGenerator/Scripts/RollerBall.cs"
 "Assets/Oculus/SampleFramework/Core/CustomHands/Scripts/Hand.cs"
 "Assets/Oculus/SampleFramework/Core/CustomHands/Scripts/HandPose.cs"
 "Assets/Oculus/SampleFramework/Core/DebugUI/Scripts/DebugUIBuilder.cs"
@@ -525,10 +526,19 @@
 "Assets/Oculus/SampleFramework/Usage/TouchPro/Scripts/Ui/UiSceneMenu.cs"
 "Assets/Oculus/SampleFramework/Usage/TouchPro/Scripts/Ui/UiVectorInspector.cs"
 "Assets/Oculus/Voice/Lib/Wit.ai/AssemblyInfo.cs"
+"Assets/Scripts/BasicMazeGenerator.cs"
 "Assets/Scripts/CubeController.cs"
+"Assets/Scripts/DivisionMazeGenerator.cs"
 "Assets/Scripts/GameController.cs"
+"Assets/Scripts/MazeCell.cs"
+"Assets/Scripts/MazeSpawner.cs"
 "Assets/Scripts/NPCController.cs"
+"Assets/Scripts/OldestTreeMazeGenerator.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/RandomTreeMazeGenerator.cs"
+"Assets/Scripts/RecursiveMazeGenerator.cs"
+"Assets/Scripts/RecursiveTreeMazeGenerator.cs"
+"Assets/Scripts/TreeMazeGenerator.cs"
 -langversion:9.0
 
 /deterministic
